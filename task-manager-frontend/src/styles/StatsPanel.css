@@ -1,0 +1,136 @@
+.stats-panel {
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 70px;
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profil */
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Statistiques */
+.stats-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.stat h3 {
+  margin: 0;
+}
+
+.total {
+  color: #333;
+}
+
+.in-progress {
+  color: #1E88E5;
+}
+
+.open {
+  color: #FFA726;
+}
+
+.completed {
+  color: #28a745;
+}
+
+/* Jauge de progression */
+.task-progress {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.progress-text {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Bouton Sign Out */
+.signout-btn {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.signout-btn:hover {
+  background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-panel {
+    width: 100%;
+    padding: 10px;
+    padding-top: 50px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-info {
+    gap: 5px;
+  }
+
+  .stat {
+    font-size: 12px;
+  }
+
+  .progress-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .progress-text {
+    font-size: 10px;
+  }
+}

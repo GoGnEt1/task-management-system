@@ -1,0 +1,142 @@
+.task-card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3 - 40px);
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  /* margin: 10px; */
+  /* width: 250px; */
+  height: 150px;
+  transition: transform 0.2s ease-in-out;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .task-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    /* margin-top: 10px; */
+  }
+  
+  .priority {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .priority.low {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .priority.medium {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .priority.high {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.7;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  .icons .star {
+    color: gold;
+  }
+  
+  .icons .edit {
+    color: blue;
+  }
+  
+  .icons .delete {
+    color: red;
+  }
+  
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .add-task-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #218838;
+  }
+  
+  .due-date {
+    font-size: 12px;
+  }
+@media screen and (max-width: 900px) {
+  .task-card {
+    width: calc(100% / 2 - 10px);
+    box-shadow: none;
+    padding: 10px;
+  }
+  .task-footer {
+    gap: 5px;
+    /* display: flex;
+    flex-direction: column; */
+    
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+    max-width: 150px;
+    text-align: center;
+    /* overflow: hidden; */
+  }
+  .task-card:hover {
+    transform: translateY(-5px);
+  }
+  .priority {
+    font-size: 10px;
+  }
+  .icons {
+    gap: 5px;
+  }
+  .icon {
+    font-size: 10px;
+  }
+  .due-date {
+    font-size: 10px;
+  }
+}
